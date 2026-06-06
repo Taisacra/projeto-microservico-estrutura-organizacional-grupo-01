@@ -22,18 +22,18 @@ public class CentroDeCusto {
     private String nome;
 
     @Enumerated (EnumType.STRING)
-    @Column(name = "tipoRepresentante",nullable = false)
+    @Column(name = "tipo_representante",nullable = false)
     private TipoRepresentante tipoRepresentante;
 
     @Column(nullable = false)
     private String nomeRepresentante;
 
     @Enumerated (EnumType.STRING)
-    @Column(name = "especificacao", nullable = false)
+    //@Column(name = "especificacao", nullable = false)
     private Especificacao especificacao;
 
     @NotNull
-    @Column(name = "id_pessoa_FK", nullable = false)
+    @Column(name = "id_pessoa_representante_fk", nullable = false)
     private Long idPessoa;
 
     @NotNull
